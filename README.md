@@ -13,7 +13,7 @@ A modern and responsive car rental booking dashboard inspired by the SIXT rental
 
 ![SIXT Car Rental Dashboard](preview2.png)
 
-# ✨ Features
+# Features
 
 *  Modern car rental booking interface
 *  Pickup and return location selection
@@ -69,10 +69,10 @@ The booking form validates important details before proceeding with the **Show C
 
 The dashboard is designed to work across:
 
-* 💻 Desktop
-* 💻 Laptop
-* 📱 Tablet
-* 📱 Mobile
+* Desktop
+* Laptop
+* Tablet
+* Mobile
 
 # JavaScript Functionality
 
