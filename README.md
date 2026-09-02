@@ -1,19 +1,17 @@
 # Sixt-Car-Rental-Dashboard
 A modern and responsive car rental booking dashboard inspired by the SIXT rental experience, built with HTML5, CSS3, and JavaScript.
 
-# Live Demo
+## Live Demo
 
 [View Live Demo](https://purvakale16.github.io/Sixt-Car-Rental-Dashboard/)
 
-# Project Preview
-
-## Desktop View
+## Project Preview
 
 ![SIXT Car Rental Dashboard](preview.png)
 
 ![SIXT Car Rental Dashboard](preview2.png)
 
-# Features
+## Features
 
 *  Modern car rental booking interface
 *  Pickup and return location selection
@@ -27,7 +25,7 @@ A modern and responsive car rental booking dashboard inspired by the SIXT rental
 *  Fully responsive design
 *  Smooth scrolling and interactive UI elements
 
-# Technologies Used
+## Technologies Used
 
 * **HTML5** – Website structure
 * **CSS3** – Styling, layout and responsive design
@@ -65,7 +63,7 @@ A custom JavaScript calendar allows users to select dates, navigate between mont
 
 The booking form validates important details before proceeding with the **Show Cars** option.
 
-# Responsive Design
+## Responsive Design
 
 The dashboard is designed to work across:
 
@@ -74,7 +72,7 @@ The dashboard is designed to work across:
 * Tablet
 * Mobile
 
-# JavaScript Functionality
+## JavaScript Functionality
 
 JavaScript is used for:
 
@@ -92,7 +90,7 @@ JavaScript is used for:
 
 The objective of this project is to create a professional, real-world inspired **car rental booking interface** while developing practical skills in frontend development and JavaScript.
 
-# What I Learned
+## What I Learned
 
 * Responsive web design
 * HTML5 structure
@@ -104,13 +102,13 @@ The objective of this project is to create a professional, real-world inspired *
 * Interactive UI development
 * Responsive layouts
 
-# Author
+## Author
 
 **Purva Kale**
 
 B.Tech IT Student
 
-# Copyright & Usage
+## Copyright & Usage
 
 This project is created for **educational and portfolio purposes**.
 
