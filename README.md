@@ -9,7 +9,7 @@ A modern and responsive car rental booking dashboard inspired by the SIXT rental
 
 ## Desktop View
 
-![SIXT Car Rental Dashboard](preview1.png)
+![SIXT Car Rental Dashboard](preview.png)
 
 ![SIXT Car Rental Dashboard](preview2.png)
 
