@@ -1,0 +1,1892 @@
+/* Global */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #000;
+    color: #111;
+}
+
+
+/*ANNOUNCEMENT BAR*/
+
+.announcement {
+    height: 40px;
+    background: #ff5f00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.announcement p {
+    font-size: 14px;
+    font-weight: 800;
+    color: #111;
+}
+
+.announcement button {
+    position: absolute;
+    right: 25px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+/*HEADER */
+
+.header {
+    height: 68px;
+    background: #080808;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 85px;
+
+    border-bottom: none !important;
+}
+
+
+/*LOGO*/
+
+.logo {
+    width: 110px;
+    height: 95px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #000;
+    box-sizing: border-box;
+}
+
+.logo img {
+    width: 90px;
+    height: auto;
+    display: block;
+}
+
+.logo span {
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 7px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-top: -24px;
+
+    white-space: nowrap;
+}
+
+
+/*HEADER RIGHT*/
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.header-right a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.header-right a:hover {
+    color: #ff5f00;
+}
+
+
+/*CURRENCY*/
+
+.currency {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.currency span {
+    color: white;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    letter-spacing: -0.2px;
+}
+
+.currency img {
+    width: 27px;
+    height: 18px;
+
+    object-fit: cover;
+
+    border-radius: 2px;
+}
+
+.currency i {
+    font-size: 9px;
+}
+
+
+/*MENU BUTTON*/
+
+.menu-btn {
+    border: none;
+    background: transparent;
+
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+
+/*CATEGORY NAV*/
+
+.category-nav {
+    height: 74px;
+
+    background: #080808;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding-left: 85px;
+}
+
+.category {
+    height: 45px;
+
+    border: none;
+
+    background: transparent;
+
+    color: white;
+
+    padding: 0 18px;
+
+    border-radius: 25px;
+
+    font-family: inherit;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+    white-space: nowrap;
+}
+
+.category:hover {
+    background: #222;
+}
+
+.category.active {
+    background: #ff5f00;
+    color: white;
+}
+
+.category i {
+    font-size: 18px;
+}
+
+
+/*HERO*/
+
+.hero {
+    min-height: 650px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #101519;
+}
+
+
+/*HERO IMAGE*/
+
+.hero-image {
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.82),
+            rgba(0, 0, 0, 0.08)
+        ),
+        url("https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=2000&q=90");
+
+    background-size: cover;
+
+    background-position: center;
+
+    transform: scale(1.02);
+}
+
+
+/*BOOKING CARD*/
+
+.booking-card {
+    position: absolute;
+
+    z-index: 10;
+
+    top: 25px;
+
+    left: 5.2%;
+    right: 5.2%;
+
+    background: white;
+
+    border-radius: 17px;
+
+    min-height: 198px;
+
+    padding: 23px 27px;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+/*BOOKING TOP*/
+
+.booking-top {
+    height: 30px;
+
+    display: flex;
+
+    justify-content: flex-end;
+}
+
+.edit-booking {
+    border: none;
+
+    background: transparent;
+
+    text-decoration: underline;
+
+    font-weight: 700;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+/*BOOKING CONTENT*/
+
+.booking-content {
+    display: grid;
+
+    grid-template-columns:
+        2.7fr
+        1fr
+        1fr
+        0.95fr;
+
+    gap: 16px;
+
+    align-items: start;
+}
+
+.booking-field {
+    min-width: 0;
+}
+
+
+/*BOOKING LABEL*/
+
+.booking-field label {
+    display: block;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    margin-bottom: 8px;
+}
+
+
+/*LOCATION ROW*/
+
+.location-row {
+    width: 715px;
+
+    height: 64px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    flex-shrink: 0;
+}
+
+
+/*LOCATION INPUT*/
+
+.location-input {
+    width: 350px;
+    height: 64px;
+
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid #d5d9dc;
+
+    border-radius: 15px;
+
+    background: #fff;
+
+    flex-shrink: 0;
+}
+
+
+/* Search icon */
+
+.location-input > i {
+    width: 30px;
+    height: 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    margin-left: 10px;
+
+    padding: 0;
+
+    font-size: 17px;
+
+    line-height: 1;
+
+    color: #111;
+}
+
+
+/* Location input */
+
+.location-input input {
+    width: 324px;
+
+    height: 64px;
+
+    border: none;
+
+    outline: none;
+
+    padding: 0;
+
+    background: transparent;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 19px;
+
+    font-weight: 400;
+
+    color: #111;
+}
+
+.location-input input::placeholder {
+    color: #cdd1d5;
+
+    opacity: 1;
+}
+
+
+/*DRIVER AGE*/
+
+.driver-age {
+    margin-top: 15px;
+
+    background: transparent;
+
+    border: none;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    cursor: pointer;
+}
+
+.driver-age i:last-child {
+    margin-left: 4px;
+
+    font-size: 10px;
+}
+
+
+/*SHOW CARS*/
+
+.show-cars {
+    width: 200px;
+    height: 50px;
+
+    margin-top: 24px;
+
+    flex-shrink: 0;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: #ff5000;
+
+    color: #fff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.show-cars:hover {
+    background: #ff5000;
+}
+
+
+/*PICKUP / RETURN DATE*/
+
+.booking-field {
+    width: 180px;
+
+    flex-shrink: 0;
+}
+
+.booking-field > label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    line-height: 16px;
+
+    color: #111;
+}
+
+
+/*DATE + TIME*/
+
+.date-time {
+    width: 200px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: stretch;
+
+    border: 1px solid #d5d9dc;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    background: #fff;
+}
+
+
+/*DATE BOX*/
+
+.date-box {
+    width: 110px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    border: none;
+
+    background: #fff;
+
+    flex-shrink: 0;
+
+    cursor: pointer;
+}
+
+
+/* Calendar icon */
+
+.date-box i {
+    width: 45px;
+    height: 56px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    font-size: 20px;
+
+    line-height: 1;
+
+    color: #111;
+
+    margin: 0;
+
+    padding: 0;
+
+    cursor: pointer;
+}
+
+
+/* Date text */
+
+.date-box input {
+    width: 110px;
+    height: 50px;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    padding: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 17px;
+
+    font-weight: 400;
+
+    color: #111;
+
+    cursor: pointer;
+}
+
+.date-box input:focus {
+    outline: none;
+}
+
+
+/*TIME BOX*/
+
+.time-box {
+    width: 90px;
+    height: 50px;
+
+    border-left: 1px solid #d5d9dc;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+
+/*TIME SELECT*/
+
+.time-box select {
+    width: 100%;
+    height: 50px;
+
+    border: none;
+
+    outline: none;
+
+    background: #fff;
+
+    padding: 0 8px;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 17px;
+
+    font-weight: 400;
+
+    color: #111;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    appearance: none;
+
+    -webkit-appearance: none;
+
+    -moz-appearance: none;
+}
+
+
+/*DIFFERENT LOCATION*/
+
+.different-location {
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    margin-left: 20px;
+
+    gap: 2rem;
+
+    padding: 0;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #555;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 16px;
+
+    font-weight: 400;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+}
+
+
+/* Plus / check icon */
+
+.different-location i {
+    font-size: 14px;
+
+    font-weight: 250;
+
+    color: #666;
+
+    line-height: 1;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+/*HERO CONTENT*/
+
+.hero-content {
+    position: absolute;
+
+    left: 85px;
+
+    bottom: 90px;
+
+    color: white;
+
+    z-index: 4;
+
+    display: none;
+}
+
+.hero-content p {
+    color: #ff5f00;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.hero-content h1 {
+    font-size: 58px;
+
+    line-height: 1;
+
+    margin: 12px 0 20px;
+
+    letter-spacing: -3px;
+}
+
+.hero-content button {
+    padding: 14px 22px;
+
+    background: #ff5f00;
+
+    color: white;
+
+    border: none;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/*PROMOTION*/
+
+.promotion {
+    min-height: 155px;
+
+    background: #ff5f00;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 80px;
+
+    padding: 25px 80px;
+
+    text-align: center;
+}
+
+.promotion h2 {
+    font-size: 47px;
+
+    font-weight: 900;
+
+    letter-spacing: -2px;
+}
+
+.promotion p {
+    font-size: 17px;
+
+    font-weight: 600;
+
+    margin-top: 7px;
+}
+
+.promotion button {
+    background: #000;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 22px;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+.promotion button:hover {
+    background: #222;
+}
+
+
+/*STATS*/
+
+.stats {
+    min-height: 145px;
+
+    background: white;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    padding: 30px 7%;
+}
+
+.stat {
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+
+    padding: 0 30px;
+
+    border-right: 1px solid #ddd;
+}
+
+.stat:last-child {
+    border-right: none;
+}
+
+.stat-icon {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #ff5f00;
+
+    font-size: 27px;
+}
+
+.stat strong {
+    display: block;
+
+    font-size: 24px;
+
+    font-weight: 800;
+}
+
+.stat span {
+    display: block;
+
+    font-size: 13px;
+
+    margin-top: 4px;
+
+    color: #444;
+}
+
+
+/*FOOTER*/
+
+.footer {
+    background: #080808;
+
+    color: white;
+
+    min-height: 100px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 25px 7%;
+
+    gap: 50px;
+}
+
+.footer-logo {
+    font-size: 28px;
+
+    font-weight: 900;
+}
+
+.footer-links {
+    display: flex;
+
+    gap: 25px;
+}
+
+.footer-links a {
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 12px;
+}
+
+.footer-links a:hover {
+    color: #ff5f00;
+}
+
+.footer p {
+    margin-left: auto;
+
+    color: #777;
+
+    font-size: 11px;
+}
+
+
+/*CUSTOM CALENDAR*/
+
+.custom-calendar {
+    position: fixed !important;
+
+    width: 300px !important;
+
+    min-height: 320px !important;
+
+    background: #ffffff !important;
+
+    color: #111111 !important;
+
+    border: 1px solid #dddddd !important;
+
+    border-radius: 16px !important;
+
+    padding: 16px !important;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.25) !important;
+
+    z-index: 999999 !important;
+
+    display: none !important;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Calendar visible */
+
+.custom-calendar.show {
+    display: block !important;
+}
+
+
+/*CALENDAR HEADER*/
+
+.custom-calendar .calendar-header {
+    width: 100% !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: space-between !important;
+
+    margin: 0 0 15px 0 !important;
+
+    padding: 0 !important;
+}
+
+
+/* Calendar title */
+
+.custom-calendar .calendar-title {
+    flex: 1 !important;
+
+    text-align: center !important;
+
+    color: #111111 !important;
+
+    font-size: 16px !important;
+
+    font-weight: 800 !important;
+
+    line-height: 34px !important;
+}
+
+
+/*CALENDAR ARROWS*/
+
+.custom-calendar .calendar-prev,
+.custom-calendar .calendar-next {
+    width: 34px !important;
+
+    height: 34px !important;
+
+    min-width: 34px !important;
+
+    min-height: 34px !important;
+
+    padding: 0 !important;
+
+    margin: 0 !important;
+
+    border: none !important;
+
+    border-radius: 50% !important;
+
+    background: #f2f2f2 !important;
+
+    color: #111111 !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    cursor: pointer !important;
+
+    font-size: 12px !important;
+}
+
+.custom-calendar .calendar-prev:hover,
+.custom-calendar .calendar-next:hover {
+    background: #ff5f00 !important;
+
+    color: #ffffff !important;
+}
+
+
+/*CALENDAR WEEKDAYS*/
+
+.custom-calendar .calendar-weekdays {
+    width: 100% !important;
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(7, 1fr) !important;
+
+    gap: 4px !important;
+
+    margin: 0 0 5px 0 !important;
+
+    padding: 0 !important;
+}
+
+.custom-calendar .calendar-weekdays span {
+    height: 30px !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    color: #777777 !important;
+
+    font-size: 11px !important;
+
+    font-weight: 700 !important;
+}
+
+
+/*CALENDAR DAYS GRID*/
+
+.custom-calendar .calendar-days {
+    width: 100% !important;
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(7, 1fr) !important;
+
+    gap: 4px !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+}
+
+
+/*EACH CALENDAR DAY*/
+
+.custom-calendar .calendar-day {
+    width: 100% !important;
+
+    height: 32px !important;
+
+    min-width: 0 !important;
+
+    min-height: 32px !important;
+
+    padding: 0 !important;
+
+    margin: 0 !important;
+
+    border: none !important;
+
+    border-radius: 50% !important;
+
+    background: transparent !important;
+
+    color: #111111 !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif !important;
+
+    font-size: 13px !important;
+
+    line-height: 32px !important;
+
+    cursor: pointer !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Hover */
+
+.custom-calendar .calendar-day:hover:not(:disabled) {
+    background: #ffe0cc !important;
+
+    color: #111111 !important;
+}
+
+
+/* Selected */
+
+.custom-calendar .calendar-day.selected {
+    background: #ff5f00 !important;
+
+    color: #ffffff !important;
+
+    font-weight: 800 !important;
+}
+
+
+/* Today */
+
+.custom-calendar .calendar-day.today {
+    border: 1px solid #ff5f00 !important;
+}
+
+
+/* Selected + today */
+
+.custom-calendar .calendar-day.selected.today {
+    border: none !important;
+}
+
+
+/* Disabled */
+
+.custom-calendar .calendar-day.disabled {
+    color: #d0d0d0 !important;
+
+    background: transparent !important;
+
+    cursor: not-allowed !important;
+}
+
+
+/* Other month */
+
+.custom-calendar .calendar-day.other-month {
+    color: #cccccc !important;
+
+    background: transparent !important;
+
+    cursor: default !important;
+}
+
+
+/*RESPONSIVE - 1200px*/
+
+@media (max-width: 1200px) {
+
+    .header,
+    .category-nav {
+        padding-left: 40px;
+
+        padding-right: 40px;
+    }
+
+
+    .header-right {
+        gap: 16px;
+    }
+
+
+    .header-right a:nth-of-type(2) {
+        display: none;
+    }
+
+
+    .booking-card {
+        left: 3%;
+
+        right: 3%;
+    }
+
+
+    .location-input {
+        min-width: 250px;
+    }
+
+
+    .different-location {
+        font-size: 13px;
+    }
+
+
+    .promotion h2 {
+        font-size: 36px;
+    }
+
+}
+
+
+/*RESPONSIVE - 950px*/
+
+@media (max-width: 950px) {
+
+    .header {
+        padding: 0 25px;
+    }
+
+
+    .header-right a {
+        display: none;
+    }
+
+
+    .category-nav {
+        padding-left: 25px;
+
+        padding-right: 10px;
+
+        overflow-x: auto;
+
+        white-space: nowrap;
+
+        scrollbar-width: none;
+    }
+
+
+    .category-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .booking-card {
+        position: relative;
+
+        top: 20px;
+
+        left: auto;
+
+        right: auto;
+
+        margin: 0 25px;
+    }
+
+
+    .hero {
+        padding-top: 220px;
+
+        min-height: 600px;
+    }
+
+
+    .booking-content {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+
+    .location-field {
+        grid-column: 1 / -1;
+    }
+
+
+    .show-cars {
+        margin-top: 20px;
+    }
+
+
+    .promotion {
+        gap: 30px;
+
+        padding: 30px;
+    }
+
+
+    .promotion h2 {
+        font-size: 30px;
+    }
+
+
+    .stats {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+
+    .stat {
+        padding: 25px;
+
+        border-bottom: 1px solid #ddd;
+    }
+
+}
+
+
+/*RESPONSIVE - 650px MOBILE*/
+
+@media (max-width: 650px) {
+
+    /* Announcement */
+
+    .announcement {
+        height: 40px;
+
+        padding: 0 35px 0 12px;
+    }
+
+
+    .announcement p {
+        font-size: 11px;
+
+        text-align: center;
+    }
+
+
+    .announcement button {
+        right: 12px;
+
+        font-size: 16px;
+    }
+
+
+    /* Header */
+
+    .header {
+        height: 65px;
+
+        padding: 0 15px;
+    }
+
+
+    .logo {
+        width: 90px;
+
+        height: 65px;
+    }
+
+
+    .logo img {
+        width: 75px;
+    }
+
+
+    .logo span {
+        font-size: 6px;
+
+        margin-top: -20px;
+    }
+
+
+    .currency,
+    .flag {
+        display: none;
+    }
+
+
+    .header-right {
+        gap: 12px;
+    }
+
+
+    .menu-btn {
+        font-size: 20px;
+    }
+
+
+    /* Category */
+
+    .category-nav {
+        height: 65px;
+
+        padding-left: 12px;
+
+        padding-right: 12px;
+
+        gap: 5px;
+
+        overflow-x: auto;
+    }
+
+
+    .category {
+        height: 42px;
+
+        padding: 0 13px;
+
+        font-size: 13px;
+
+        flex-shrink: 0;
+
+        gap: 8px;
+    }
+
+
+    .category i {
+        font-size: 15px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        min-height: 690px;
+
+        padding-top: 0;
+
+        overflow: visible;
+    }
+
+
+    .hero-image {
+        background-position: center;
+    }
+
+
+    /* Booking */
+
+    .booking-card {
+        position: relative;
+
+        top: 20px;
+
+        left: auto;
+
+        right: auto;
+
+        margin: 0 12px;
+
+        padding: 18px;
+
+        border-radius: 15px;
+    }
+
+
+    .booking-top {
+        height: 25px;
+    }
+
+
+    .edit-booking {
+        font-size: 11px;
+    }
+
+
+    .booking-content {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    .location-field {
+        grid-column: auto;
+    }
+
+
+    /* Location */
+
+    .location-row {
+        width: 100%;
+
+        height: auto;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 10px;
+    }
+
+
+    .location-input {
+        width: 100%;
+
+        min-width: 0;
+
+        height: 55px;
+    }
+
+
+    .location-input input {
+        width: 100%;
+
+        height: 55px;
+
+        font-size: 16px;
+    }
+
+
+    .location-input > i {
+        width: 30px;
+
+        margin-left: 8px;
+    }
+
+
+    .different-location {
+        width: 100%;
+
+        height: 45px;
+
+        justify-content: flex-start;
+
+        margin: 0;
+
+        gap: 10px;
+
+        font-size: 14px;
+    }
+
+
+    .different-location i {
+        margin: 0;
+    }
+
+
+    /* Driver */
+
+    .driver-age {
+        margin-top: 10px;
+
+        font-size: 13px;
+    }
+
+
+    /* Date fields */
+
+    .booking-field {
+        width: 100%;
+    }
+
+
+    .booking-field > label {
+        font-size: 13px;
+
+        margin-bottom: 7px;
+    }
+
+
+    .date-time {
+        width: 100%;
+
+        height: 50px;
+    }
+
+
+    .date-box {
+        flex: 1;
+
+        width: auto;
+
+        min-width: 0;
+    }
+
+
+    .date-box i {
+        width: 42px;
+
+        font-size: 19px;
+    }
+
+
+    .date-box input {
+        width: 100%;
+
+        min-width: 0;
+
+        font-size: 16px;
+    }
+
+
+    .time-box {
+        width: 95px;
+
+        flex-shrink: 0;
+    }
+
+
+    .time-box select {
+        font-size: 15px;
+
+        padding: 0 5px;
+    }
+
+
+    /* Show cars */
+
+    .show-cars {
+        width: 100%;
+
+        height: 50px;
+
+        margin-top: 0;
+
+        font-size: 17px;
+    }
+
+
+    /* Promotion */
+
+    .promotion {
+        min-height: 190px;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 30px 20px;
+    }
+
+
+    .promotion h2 {
+        font-size: 25px;
+
+        line-height: 1.1;
+
+        letter-spacing: -1px;
+    }
+
+
+    .promotion p {
+        font-size: 13px;
+
+        line-height: 1.4;
+    }
+
+
+    .promotion button {
+        padding: 13px 22px;
+    }
+
+
+    /* Stats */
+
+    .stats {
+        grid-template-columns: 1fr;
+
+        padding: 20px;
+    }
+
+
+    .stat {
+        border-right: none;
+
+        padding: 20px 10px;
+
+        border-bottom: 1px solid #ddd;
+    }
+
+
+    .stat:last-child {
+        border-bottom: none;
+    }
+
+
+    .stat strong {
+        font-size: 22px;
+    }
+
+
+    .stat span {
+        font-size: 12px;
+    }
+
+
+    /* Footer */
+
+    .footer {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+        padding: 30px 20px;
+    }
+
+
+    .footer-links {
+        flex-wrap: wrap;
+
+        gap: 15px 20px;
+    }
+
+
+    .footer p {
+        margin-left: 0;
+    }
+
+
+    /* Calendar */
+
+    .custom-calendar {
+        width: calc(100vw - 30px) !important;
+
+        max-width: 320px !important;
+
+        min-height: 310px !important;
+
+        padding: 14px !important;
+
+        border-radius: 15px !important;
+    }
+
+
+    .custom-calendar .calendar-day {
+        height: 34px !important;
+
+        min-height: 34px !important;
+
+        line-height: 34px !important;
+    }
+
+
+    .custom-calendar .calendar-weekdays span {
+        height: 28px !important;
+    }
+
+}
+
+
+@media (max-width: 380px) {
+
+    .header {
+        padding: 0 10px;
+    }
+
+
+    .logo {
+        width: 80px;
+    }
+
+
+    .logo img {
+        width: 68px;
+    }
+
+
+    .category {
+        padding: 0 11px;
+
+        font-size: 12px;
+    }
+
+
+    .booking-card {
+        margin: 0 8px;
+
+        padding: 15px;
+    }
+
+
+    .date-box i {
+        width: 38px;
+    }
+
+
+    .time-box {
+        width: 85px;
+    }
+
+
+    .time-box select {
+        font-size: 13px;
+    }
+
+
+    .custom-calendar {
+        width: calc(100vw - 20px) !important;
+
+        max-width: 320px !important;
+
+        padding: 12px !important;
+    }
+
+
+    .custom-calendar .calendar-day {
+        font-size: 12px !important;
+
+        height: 32px !important;
+
+        min-height: 32px !important;
+
+        line-height: 32px !important;
+    }
+
+
+    .custom-calendar .calendar-prev,
+    .custom-calendar .calendar-next {
+        width: 30px !important;
+
+        height: 30px !important;
+
+        min-width: 30px !important;
+
+        min-height: 30px !important;
+    }
+
+}
+

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Premium Car Rental | SIXT</title>
+
+    <!-- Favicon -->
+    <link rel="icon"
+          href="https://www.sixt.com/favicon.ico">
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+
+
+<body>
+
+
+<!-- TOP ANNOUNCEMENT BAR -->
+
+<div class="announcement">
+
+    <p>
+        114 years of SIXT. 114 years of tradition.
+    </p>
+
+    <button id="closeAnnouncement">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+</div>
+
+
+
+<!-- MAIN NAVBAR-->
+
+<header class="header">
+
+    <div class="header-left">
+
+        <div class="logo">
+            
+            <img src="image.png" alt="logo">
+            <span>RENT THE CAR</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="header-right">
+
+        <div class="currency">
+            <span>₹ INR</span>
+            <img src="image2.png" alt="USA">
+        </div>
+
+
+
+        <a href="#">
+            <i class="fa-regular fa-circle-question"></i>
+            Help
+        </a>
+
+
+        <a href="#">
+            <i class="fa-solid fa-car"></i>
+            Manage bookings
+        </a>
+
+
+        <a href="#">
+            <i class="fa-solid fa-user"></i>
+            Log in | Register
+        </a>
+
+
+        <button class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- CATEGORY NAV -->
+
+<nav class="category-nav">
+
+    <button class="category active">
+
+        <i class="fa-solid fa-car"></i>
+
+        Cars
+
+    </button>
+
+
+    <button class="category">
+
+        <i class="fa-solid fa-truck"></i>
+
+        Trucks
+
+    </button>
+
+
+    <button class="category">
+
+        <i class="fa-solid fa-briefcase"></i>
+
+        For business
+
+    </button>
+
+
+    <button class="category">
+
+        <i class="fa-solid fa-car-side"></i>
+
+        Car subscription
+
+    </button>
+
+
+    <button class="category">
+
+        <i class="fa-solid fa-plane-arrival"></i>
+
+        Airport transfer
+
+    </button>
+
+
+    <button class="category">
+
+        <i class="fa-solid fa-clock"></i>
+
+        Car sharing
+
+    </button>
+
+</nav>
+
+
+
+<!--HERO SECTION-->
+
+<section class="hero">
+
+
+    <!-- Hero Background -->
+
+    <div class="hero-image"></div>
+
+
+    <!--BOOKING CARD -->
+
+    <div class="booking-card">
+
+
+        <div class="booking-top">
+
+            <button class="edit-booking">
+                View / edit my booking
+            </button>
+
+        </div>
+
+
+
+        <div class="booking-content">
+
+
+            <!-- PICKUP LOCATION -->
+
+            <div class="booking-field location-field">
+
+                <label>
+                    Pickup & return
+                </label>
+
+                <div class="location-row">
+
+                    <div class="location-input">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="text"
+                            id="location"
+                            placeholder="Airport, city or address">
+
+                    </div>
+
+
+                    <button
+                        class="different-location"
+                        id="differentLocation">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Different return location
+
+                    </button>
+
+                </div>
+
+
+                <button class="driver-age"
+                        id="driverAge">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    Driver's age 30+
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+            </div>
+
+
+
+            <!-- PICKUP DATE 
+
+            <div class="booking-field">
+
+                <label>
+                    Pickup date
+                </label>
+
+                <div class="date-time">
+
+                    <div class="date-box">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        <input
+                            type="text"
+                            id="pickupDate"
+                            value="Aug 18"
+                            readonly>
+                
+
+                    </div>
+
+
+                    <div class="time-box">
+
+                        <select id="pickupTime">
+
+                            <option>10:00 AM</option>
+                            <option>11:00 AM</option>
+                            <option>12:00 PM</option>
+                            <option>01:00 PM</option>
+                            <option>02:00 PM</option>
+                            <option>03:00 PM</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div> -->
+
+<!----------------------------------------->
+<div class="booking-field">
+
+    <label>
+        Pickup date
+    </label>
+
+    <div class="date-time">
+
+        <div class="date-box">
+
+            <i class="fa-regular fa-calendar"></i>
+
+            <input
+                type="text"
+                id="pickupDate"
+                value="Aug 22"
+                readonly>
+
+        </div>
+
+        <div class="time-box">
+
+            <select id="pickupTime">
+
+                <option>10:00 AM</option>
+                <option>11:00 AM</option>
+                <option>12:00 PM</option>
+                <option>01:00 PM</option>
+                <option>02:00 PM</option>
+                <option>03:00 PM</option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+</div>
+
+            
+
+
+<div class="booking-field">
+
+    <label>
+        Return date
+    </label>
+
+    <div class="date-time">
+
+        <div class="date-box">
+
+            <i class="fa-regular fa-calendar"></i>
+
+            <input
+                type="text"
+                id="returnDate"
+                value="Aug 23"
+                readonly>
+
+        </div>
+
+        <div class="time-box">
+
+            <select id="returnTime">
+
+                <option>10:00 AM</option>
+                <option>11:00 AM</option>
+                <option>12:00 PM</option>
+                <option>01:00 PM</option>
+                <option>02:00 PM</option>
+                <option>03:00 PM</option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+            <!-- SEARCH BUTTON -->
+
+               <button class="show-cars"
+                    id="showCars">
+
+                Show cars
+
+              </button>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!--HERO TEXT-->
+
+    <div class="hero-content">
+
+        <p>
+            PREMIUM CAR RENTAL
+        </p>
+
+        <h1>
+            Your journey<br>
+            starts here.
+        </h1>
+
+        <button id="heroExplore">
+            Explore our cars
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+
+</section>
+
+
+
+<!--SIXT ONE PROMOTION-->
+
+<section class="promotion">
+
+    <div class="promotion-content">
+
+        <h2>
+            MEMBER-ONLY RATES WITH SIXT ONE
+        </h2>
+
+        <p>
+            Premium car rental at prices you'll love. Worldwide.
+        </p>
+
+    </div>
+
+
+    <button id="learnMore">
+        LEARN MORE
+    </button>
+
+</section>
+
+
+
+<!-- STATS SECTION-->
+
+<section class="stats">
+
+
+    <div class="stat">
+
+        <div class="stat-icon">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+        </div>
+
+        <div>
+
+            <strong>2,200+</strong>
+
+            <span>
+                Locations worldwide
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="stat">
+
+        <div class="stat-icon">
+
+            <i class="fa-solid fa-globe"></i>
+
+        </div>
+
+        <div>
+
+            <strong>170+</strong>
+
+            <span>
+                Countries
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="stat">
+
+        <div class="stat-icon">
+
+            <i class="fa-solid fa-car"></i>
+
+        </div>
+
+        <div>
+
+            <strong>100K+</strong>
+
+            <span>
+                Cars available
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="stat">
+
+        <div class="stat-icon">
+
+            <i class="fa-regular fa-clock"></i>
+
+        </div>
+
+        <div>
+
+            <strong>24/7</strong>
+
+            <span>
+                Customer support
+            </span>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- FOOTER-->
+
+<footer class="footer">
+
+    <div class="footer-logo">
+        SIXT
+    </div>
+
+
+    <div class="footer-links">
+
+        <a href="#">About SIXT</a>
+
+        <a href="#">Locations</a>
+
+        <a href="#">Help</a>
+
+        <a href="#">Privacy</a>
+
+        <a href="#">Terms</a>
+
+    </div>
+
+
+    <p>
+        © 2026 Car Rental Dashboard
+    </p>
+
+</footer>
+
+
+
+<!--JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
