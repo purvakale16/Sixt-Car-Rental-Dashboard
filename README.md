@@ -108,7 +108,7 @@ The objective of this project is to create a professional, real-world inspired *
 
 **Purva Kale**
 
-B.Tech IT Student | Java Full Stack Developer
+B.Tech IT Student
 
 # Copyright & Usage
 
